@@ -120,4 +120,16 @@ class WP_HTML_Minify
     }
 }
 
+// minify html
+function wp_html_minify_finish($html){
+    return new WP_HTML_Minify($html);
+}
+
+// add to buffer the wp_html_minify_start
+function wp_html_minify_start(){
+    ob_start('wp_html_minify_finish');
+}
+
+add_action('get_header', 'wp_html_minify_start');
+
 ?>
