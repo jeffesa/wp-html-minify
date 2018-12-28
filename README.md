@@ -2,8 +2,8 @@
 Class to minify HTML on Wordpress without a plugin
 
 ## How I do?
-- Copy the class **WP_HTML_Minify** and paste on functions.php file inside your theme.
-- You need also copy and paste the code below on functions.php.
+- Copy the class WP_HTML_Minify and paste on the functions.php file inside your theme.
+- You need also copy and paste the code below in functions.php file.
   
 ```php
 // minify html
